@@ -5,7 +5,7 @@ export default class App extends React.Component<{}, {}> {
     render() {
         return (
             <div className="App">
-                Tähän tulee jAlkaMetri
+                Tähän tulee jAlkaMetri, varros vaan.
             </div>
         )
     }
