@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# This script is run by the script/deploy.sh script at pomeranssi.fi to build and deploy jAlkaMetri.
+
 pushd . >/dev/null
 
 cd `dirname $0`/../..
