@@ -7,7 +7,7 @@ pushd . >/dev/null
 
 cd `dirname $0`/../..
 
-echo -n "Building jAlkaMetri client in"
+echo -n "Building jAlkaMetri client in "
 pwd
 
 npm run build
