@@ -12,24 +12,33 @@
     "url": "http://tuukka.pomeranssi.fi/"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.5",
     "redux": "^3.7.1"
   },
   "devDependencies": {
+    "@types/body-parser": "^1.16.4",
+    "@types/express": "^4.0.36",
     "@types/jest": "^20.0.2",
     "@types/node": "^8.0.6",
     "@types/react": "^15.0.33",
     "@types/react-dom": "^15.5.1",
     "@types/react-redux": "^4.4.45",
     "fsevents": "^1.1.2",
-    "react-scripts-ts": "^2.3.2"
+    "nodemon": "^1.11.0",
+    "react-scripts-ts": "^2.3.2",
+    "typescript": "^2.4.1"
   },
   "homepage": "https://jalkametri.pomeranssi.fi/",
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
+    "start": "echo Please run either start-client or start-server:live",
+    "start-client": "react-scripts-ts start",
+    "start-server:live": "nodemon --exec ts-node -- ./src/server/index.ts",
+    "build": "npm run build-client",
+    "build-client": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject"
   }

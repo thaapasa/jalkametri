@@ -4,17 +4,23 @@
 
 pushd . >/dev/null
 
+function die {
+    echo "Error: $1"
+    popd >/dev/null
+    exit -1
+}
+
 cd `dirname $0`/../..
 
 echo -n "Updating to new jAlkaMetri version in "
 pwd
-git pull
+git pull || die "Could not update jAlkaMetri sources"
 
 echo "Installing dependencies"
-npm install
+npm install || die "Could not install dependencies"
 
 echo "Building and deploying client"
-./script/deployer/deploy-client.sh
+./script/deployer/deploy-client.sh || die "Could not deploy client"
 
 echo "jAlkaMetri build complete"
 
