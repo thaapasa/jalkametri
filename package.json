@@ -30,6 +30,7 @@
     "fsevents": "^1.1.2",
     "nodemon": "^1.11.0",
     "react-scripts-ts": "^2.3.2",
+    "ts-node": "^3.2.1",
     "typescript": "^2.4.1"
   },
   "homepage": "https://jalkametri.pomeranssi.fi/",
