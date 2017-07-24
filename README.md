@@ -8,8 +8,12 @@ suitable for use in mobile phones and desktop browsers.
 ### Setup
 - Checkout from git
 - See that you have new npm (i.e., `sudo npm install -g npm`)
-- Run `sudo npm install -g ts-node`
+- Run `sudo npm install -g ts-node nodemon react-scripts-ts`
+- Install Flyway CLI
 - Run `npm install`
+- Copy `flyway.conf.tmpl` to `flyway.conf`
+- Create local postgresql database with name `jalkametri`, accessible for user `jalkametri` with password `password`
+  - Or: edit `flyway.conf` to match your db name and credentials
 
 ### Development
 - To start the server, run `npm run start-server:live`
