@@ -1,7 +1,7 @@
 import * as React from 'react'
 import './App.css'
-import {config} from '../../common/config'
-import {backend} from '../app/backend'
+import { config } from '../../common/config'
+import { backend } from '../app/backend'
 
 type AppState = {serverAlive?: boolean}
 

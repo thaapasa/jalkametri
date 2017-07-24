@@ -1,7 +1,7 @@
 import * as request from 'superagent'
 import * as Promise from 'bluebird'
-import {Response} from 'superagent'
-import {contains} from '../../common/strings'
+import { Response } from 'superagent'
+import { contains } from '../../common/strings'
 
 export const backend = {
 
