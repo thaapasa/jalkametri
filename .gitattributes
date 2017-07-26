@@ -78,12 +78,13 @@
 *.lst text
 *.prefs text
 
-
-# Denote all files that are truly binary and should not be modified.
+# Enforce specific EOL characters
 
 # npm config
-package-lock.json binary
-package.json binary
+package-lock.json eol=lf
+package.json eol=lf
+
+# Denote all files that are truly binary and should not be modified.
 
 # Images
 *.png binary
